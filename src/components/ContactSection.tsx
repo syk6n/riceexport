@@ -37,7 +37,7 @@ const ContactSection = () => {
               <MapPin className="h-7 w-7 lg:h-8 lg:w-8 text-emerald-600" />
             </div>
             <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">Location</h3>
-            <p className="text-sm lg:text-base text-gray-600">Mumbai, India</p>
+            <p className="text-sm lg:text-base text-gray-600">5192, Naya Bazar,<br />Delhi, India 110006</p>
           </div>
         </div>
 
