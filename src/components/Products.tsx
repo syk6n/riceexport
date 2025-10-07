@@ -94,32 +94,79 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Additional Info */}
+        {/* Certifications Section */}
         <div className="mt-12 lg:mt-16 bg-white rounded-2xl p-6 lg:p-8 shadow-lg">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 text-center">
-            <div className="space-y-3">
-              <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                <Leaf className="h-8 w-8 text-emerald-600" />
+          <div className="text-center mb-8">
+            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Our Certifications</h3>
+            <p className="text-gray-600">Trusted quality standards ensuring excellence in every grain</p>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 items-center justify-items-center">
+            {/* ISO 22000 */}
+            <div className="flex flex-col items-center space-y-3 p-4 hover:bg-gray-50 rounded-xl transition-colors duration-200">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-blue-100">
+                <img 
+                  src="https://droppe.com/blog-admin/wp-content/uploads/2024/05/iso-22000.webp" 
+                  alt="ISO 22000 Certification" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Sustainably Grown</h3>
-              <p className="text-gray-600">Environmentally responsible farming practices for better rice and better planet.</p>
+              <span className="text-xs lg:text-sm font-medium text-gray-700 text-center">Food Safety Management</span>
             </div>
-            
-            <div className="space-y-3 sm:col-span-2 lg:col-span-1">
-              <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                <Clock className="h-8 w-8 text-amber-600" />
+
+            {/* ISO 9001 */}
+            <div className="flex flex-col items-center space-y-3 p-4 hover:bg-gray-50 rounded-xl transition-colors duration-200">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-green-50 rounded-full flex items-center justify-center border-2 border-green-100">
+                <img 
+                  src="https://www.arenasolutions.com/wp-content/uploads/what-is-iso-9001-compliance.png" 
+                  alt="ISO 9001 Certification" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Aged Perfectly</h3>
-              <p className="text-gray-600">Our rice is aged for optimal texture, aroma, and cooking performance.</p>
+              <span className="text-xs lg:text-sm font-medium text-gray-700 text-center">Quality Management</span>
             </div>
-            
-            <div className="space-y-3">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
-                <Star className="h-8 w-8 text-blue-600" />
+
+            {/* HACCP */}
+            <div className="flex flex-col items-center space-y-3 p-4 hover:bg-gray-50 rounded-xl transition-colors duration-200">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-red-100">
+                <img 
+                  src="https://goodwillandgoodwill.com/wp-content/uploads/2023/09/061.jpg" 
+                  alt="HACCP Certification" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Export Grade</h3>
-              <p className="text-gray-600">Meeting international quality standards and certifications worldwide.</p>
+              <span className="text-xs lg:text-sm font-medium text-gray-700 text-center">Hazard Analysis</span>
             </div>
+
+            {/* GMP */}
+            <div className="flex flex-col items-center space-y-3 p-4 hover:bg-gray-50 rounded-xl transition-colors duration-200">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-purple-100">
+                <img 
+                  src="https://images.seeklogo.com/logo-png/28/1/gmp-quality-logo-png_seeklogo-285045.png" 
+                  alt="GMP Certification" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <span className="text-xs lg:text-sm font-medium text-gray-700 text-center">Good Manufacturing</span>
+            </div>
+
+            {/* APEDA */}
+            <div className="flex flex-col items-center space-y-3 p-4 hover:bg-gray-50 rounded-xl transition-colors duration-200 sm:col-span-3 lg:col-span-1">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-orange-100 p-1">
+                <img 
+                  src="https://www.uxdt.nic.in/wp-content/uploads/2024/06/agricultural-and-processed-food-products-export-development-authority-apeda-01.jpg?x31121" 
+                  alt="APEDA Certification" 
+                  className="w-full h-full object-contain rounded-full"
+                />
+              </div>
+              <span className="text-xs lg:text-sm font-medium text-gray-700 text-center">Export Certification</span>
+            </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <p className="text-sm text-gray-500">
+              All certifications are regularly audited and maintained to ensure compliance with international standards
+            </p>
           </div>
         </div>
       </div>
