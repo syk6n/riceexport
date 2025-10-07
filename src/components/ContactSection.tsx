@@ -21,7 +21,7 @@ const ContactSection = () => {
               <Phone className="h-7 w-7 lg:h-8 lg:w-8 text-emerald-600" />
             </div>
             <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">Phone</h3>
-            <p className="text-sm lg:text-base text-gray-600">+91 123 456 7890</p>
+            <p className="text-sm lg:text-base text-gray-600">+91 9810090228</p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
