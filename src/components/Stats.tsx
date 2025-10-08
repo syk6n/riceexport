@@ -32,6 +32,7 @@ const Stats = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm mb-4">
             <div className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></div>
+            <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
             <span className="text-sm font-medium text-gray-600">Our Achievements</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
@@ -61,7 +62,9 @@ const Stats = () => {
                   <div className="absolute top-6 right-6">
                     <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg">
                       <div className={`text-2xl sm:text-3xl font-bold ${stat.textColor}`}>
+                      <div className="text-2xl sm:text-3xl font-bold text-blue-600">
                         {stat.number}
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -77,7 +80,7 @@ const Stats = () => {
                 {/* Content Section */}
                 <div className="p-6 lg:p-8">
                   <div className="flex items-center mb-4">
-                    <div className="w-2 h-8 bg-green-400 rounded-full mr-4"></div>
+                    <div className="w-2 h-8 bg-yellow-400 rounded-full mr-4"></div>
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                       {stat.label}
                     </h3>
@@ -91,13 +94,17 @@ const Stats = () => {
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <div className="flex items-center justify-between">
                       <div className={`inline-flex items-center px-3 py-1 ${stat.bgColor} rounded-full`}>
+                      <div className="inline-flex items-center px-3 py-1 bg-blue-50 rounded-full">
                         <span className={`text-xs font-medium ${stat.textColor}`}>
+                        <span className="text-xs font-medium text-blue-600">
                           Industry Leading
                         </span>
+                        </span>
+                      </div>
                       </div>
                       <div className="flex space-x-1">
                         {[...Array(5)].map((_, i) => (
-                          <div key={i} className={`w-2 h-2 rounded-full ${i < 4 ? stat.gradient.replace('from-', 'bg-').split(' ')[0] : 'bg-gray-200'}`}></div>
+                          <div key={i} className={`w-2 h-2 rounded-full ${i < 4 ? 'bg-yellow-400' : 'bg-gray-200'}`}></div>
                         ))}
                       </div>
                     </div>
@@ -111,6 +118,7 @@ const Stats = () => {
         {/* Bottom CTA Section */}
         <div className="mt-16 lg:mt-20 text-center">
           <div className="bg-gradient-to-r from-emerald-500 to-lime-500 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"></div>
@@ -122,14 +130,17 @@ const Stats = () => {
                 Ready to Experience Our Excellence?
               </h3>
               <p className="text-lg sm:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                 Join hundreds of satisfied clients worldwide who trust Nav Bharat Global for premium rice exports
               </p>
+              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-colors duration-200 shadow-lg">
+                <button className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 shadow-lg">
                   View Products
                 </button>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

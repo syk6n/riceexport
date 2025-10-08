@@ -16,7 +16,7 @@ const CompanyValues = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="mb-8 lg:mb-16 text-center lg:text-left">
-          <div className="text-emerald-300 text-sm font-medium uppercase tracking-wider mb-2">
+          <div className="text-blue-300 text-sm font-medium uppercase tracking-wider mb-2">
             OUR
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-white">
@@ -29,7 +29,7 @@ const CompanyValues = () => {
           {/* Value 1 */}
           <div className="text-center space-y-4 lg:space-y-6">
             <div className="flex justify-center mb-4 lg:mb-6">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-emerald-400/30 shadow-2xl">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-yellow-400/30 shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Quality Excellence"
@@ -42,7 +42,7 @@ const CompanyValues = () => {
               QUALITY EXCELLENCE
             </h3>
             
-            <p className="text-emerald-100 text-sm lg:text-base leading-relaxed">
+            <p className="text-blue-100 text-sm lg:text-base leading-relaxed">
               We maintain the highest standards of quality in every grain of rice we export, ensuring our customers receive only the finest basmati rice varieties that meet international quality standards.
             </p>
           </div>
@@ -50,7 +50,7 @@ const CompanyValues = () => {
           {/* Value 2 */}
           <div className="text-center space-y-4 lg:space-y-6">
             <div className="flex justify-center mb-4 lg:mb-6">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-emerald-400/30 shadow-2xl">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-yellow-400/30 shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/4110071/pexels-photo-4110071.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="SUPPLY CHAIN"
@@ -63,7 +63,7 @@ const CompanyValues = () => {
               EFFICIENT SUPPLY CHAIN
             </h3>
             
-            <p className="text-emerald-100 text-sm lg:text-base leading-relaxed">
+            <p className="text-blue-100 text-sm lg:text-base leading-relaxed">
               A robust and efficient supply chain network to ensure a consistent and reliable flow of rice from India to international destinations. We work closely with reputed farmers, processors, and logistics partners to maintain the integrity of our supply chain.
             </p>
           </div>
@@ -71,7 +71,7 @@ const CompanyValues = () => {
           {/* Value 3 */}
           <div className="text-center space-y-4 lg:space-y-6">
             <div className="flex justify-center mb-4 lg:mb-6">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-emerald-400/30 shadow-2xl">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-yellow-400/30 shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Global Reach"
@@ -84,7 +84,7 @@ const CompanyValues = () => {
               GLOBAL OUTREACH
             </h3>
             
-            <p className="text-emerald-100 text-sm lg:text-base leading-relaxed">
+            <p className="text-blue-100 text-sm lg:text-base leading-relaxed">
               Our extensive network and experience enable us to serve customers across multiple countries, making NavBharat Global a truly international rice exporting company with global reach.
             </p>
           </div>

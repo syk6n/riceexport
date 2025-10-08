@@ -68,7 +68,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-4 lg:space-y-6">
             <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
+              <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
               <span>{content.title}</span>
             </div>
             

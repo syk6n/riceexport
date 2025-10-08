@@ -109,7 +109,7 @@ const Hero = () => {
                       ? 'translate-y-0 opacity-100' 
                       : 'translate-y-12 opacity-0'
                   }`}>
-                    Indian Rice
+                    <span className="text-yellow-400">Indian Rice</span>
                   </span>
                 </h1>
               </div>
@@ -140,7 +140,7 @@ const Hero = () => {
                   Built on years of trust and excellence, Nav Bharat Global carries forward India's rich rice heritage to global markets, delivering authenticity in every grain.
                 </p>
                 
-                <Link to="/about" className="text-lime-400 font-medium hover:text-lime-300 transition-colors duration-200 flex items-center group">
+                <Link to="/about" className="text-yellow-400 font-medium hover:text-yellow-300 transition-colors duration-200 flex items-center group">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
