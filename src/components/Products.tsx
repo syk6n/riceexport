@@ -67,15 +67,6 @@ const Products = () => {
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{product.name}</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed flex-grow">{product.description}</p>
                 
-                <div className="space-y-1 sm:space-y-2 mb-4 sm:mb-6">
-                  {product.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-2">
-                      <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-emerald-600 flex-shrink-0" />
-                      <span className="text-sm text-gray-700">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-
                 <div className="flex items-center justify-between mt-auto">
                   <div className="flex items-center space-x-1">
                     {[...Array(5)].map((_, i) => (

@@ -77,7 +77,7 @@ const Stats = () => {
                 {/* Content Section */}
                 <div className="p-6 lg:p-8">
                   <div className="flex items-center mb-4">
-                    <div className={`w-1 h-8 ${stat.gradient.replace('from-', 'bg-').split(' ')[0]} rounded-full mr-4`}></div>
+                    <div className="w-2 h-8 bg-green-400 rounded-full mr-4"></div>
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                       {stat.label}
                     </h3>
