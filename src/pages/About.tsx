@@ -144,18 +144,14 @@ const About = () => {
       <section className="py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-green-50 rounded-2xl lg:rounded-3xl p-6 lg:p-12">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 text-center">
               <div>
                 <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-green-700 mb-1 lg:mb-2">25</div>
                 <div className="text-gray-600 text-sm sm:text-base lg:text-lg">Years in Market</div>
               </div>
               <div>
-                <div className="text-6xl lg:text-7xl font-bold text-green-700 mb-2">500</div>
-                <div className="text-gray-600 text-lg">Completed Projects</div>
-              </div>
-              <div>
-                <div className="text-6xl lg:text-7xl font-bold text-green-700 mb-2">99%</div>
-                <div className="text-gray-600 text-lg">Satisfied Clients</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-green-700 mb-1 lg:mb-2">99%</div>
+                <div className="text-gray-600 text-sm sm:text-base lg:text-lg">Satisfied Clients</div>
               </div>
             </div>
           </div>
