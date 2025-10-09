@@ -55,7 +55,7 @@ const About = () => {
               onClick={() => setActiveTab(tab.name)}
               className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-200 text-sm sm:text-base ${
                 activeTab === tab.name
-                  ? 'bg-lime-400 text-gray-900'
+                  ? 'bg-[#001f3f] text-white'
                   : 'bg-white text-gray-600 hover:bg-gray-100'
               }`}
             >

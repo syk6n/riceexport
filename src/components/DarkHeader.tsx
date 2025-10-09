@@ -77,8 +77,8 @@ const DarkHeader = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/contact" className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               isScrolled
-                ? 'bg-lime-400 text-gray-900 hover:bg-lime-300 shadow-lg'
-                : 'bg-lime-400 text-gray-900 hover:bg-lime-300'
+                ? 'bg-yellow-400 text-gray-900 hover:bg-yellow-300 shadow-lg'
+                : 'bg-yellow-400 text-gray-900 hover:bg-yellow-300'
             }`}>
               Contact
             </Link>
@@ -129,7 +129,7 @@ const DarkHeader = () => {
                 )
               ))}
             <div className="pt-4 space-y-2 border-t border-gray-200">
-                <Link to="/contact" className="bg-lime-400 text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-lime-300 transition-colors duration-200 w-full text-center block" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/contact" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-colors duration-200 w-full text-center block" onClick={() => setIsMenuOpen(false)}>
                   Contact
                 </Link>
               </div>

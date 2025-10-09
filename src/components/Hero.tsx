@@ -157,8 +157,8 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-lime-400 w-8' 
+              index === currentSlide
+                ? 'bg-yellow-400 w-8'
                 : 'bg-white/50 hover:bg-white/75'
             }`}
           />
