@@ -5,12 +5,6 @@ import { Star, Leaf, Clock, CheckCircle } from 'lucide-react';
 const Products = () => {
   const products = [
     {
-      name: 'Basmati Rice',
-      description: 'Premium basmati varieties including 1121, 1718, 1509, Pusa 1401, Pusa, and Traditional basmati rice',
-      image: 'https://images.pexels.com/photos/1094137/pexels-photo-1094137.jpeg?auto=compress&cs=tinysrgb&w=400',
-      features: ['6 Premium Varieties', 'Extra Long Grain', 'Export Grade']
-    },
-    {
       name: 'Parboiled Rice',
       description: 'High-quality parboiled rice varieties with excellent nutritional value and extended shelf life',
       image: 'https://images.pexels.com/photos/4110071/pexels-photo-4110071.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -58,7 +52,7 @@ const Products = () => {
                   alt={product.name}
                   className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-emerald-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-amber-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                   Premium
                 </div>
               </div>
@@ -73,9 +67,9 @@ const Products = () => {
                       <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 text-amber-400 fill-current" />
                     ))}
                   </div>
-                  <Link 
-                    to="/contact" 
-                    className="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition-colors duration-200 whitespace-nowrap flex-shrink-0"
+                  <Link
+                    to="/contact"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200 whitespace-nowrap flex-shrink-0"
                   >
                     Get Quote
                   </Link>

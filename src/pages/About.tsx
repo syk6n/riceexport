@@ -143,14 +143,14 @@ const About = () => {
       {/* Statistics Section */}
       <section className="py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-green-50 rounded-2xl lg:rounded-3xl p-6 lg:p-12">
+          <div className="bg-blue-50 rounded-2xl lg:rounded-3xl p-6 lg:p-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 text-center">
               <div>
-                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-green-700 mb-1 lg:mb-2">25</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-blue-700 mb-1 lg:mb-2">25</div>
                 <div className="text-gray-600 text-sm sm:text-base lg:text-lg">Years in Market</div>
               </div>
               <div>
-                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-green-700 mb-1 lg:mb-2">99%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-blue-700 mb-1 lg:mb-2">99%</div>
                 <div className="text-gray-600 text-sm sm:text-base lg:text-lg">Satisfied Clients</div>
               </div>
             </div>
@@ -159,28 +159,22 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-green-700">
+      <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-blue-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
               Ready to Experience Premium Quality Rice?
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-green-100 mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
               Discover our comprehensive range of premium basmati rice varieties, each carefully selected and processed to meet international quality standards.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link 
-                to="/products" 
-                className="bg-lime-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-lime-300 transition-colors duration-200 inline-flex items-center group"
+            <div className="flex justify-center">
+              <Link
+                to="/products"
+                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 inline-flex items-center group"
               >
                 View Our Products
                 <Send className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-              <Link 
-                to="/contact" 
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-green-700 transition-colors duration-200"
-              >
-                Get Quote
               </Link>
             </div>
           </div>
@@ -200,29 +194,29 @@ const About = () => {
           </div>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            <div className="bg-green-50 p-6 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-green-700">1</span>
+            <div className="bg-blue-50 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-700">1</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Quality</h3>
               <p className="text-sm text-gray-600">
                 We use only the best rice varieties that retain their premium characteristics for international markets
               </p>
             </div>
-            
-            <div className="bg-green-50 p-6 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-green-700">2</span>
+
+            <div className="bg-blue-50 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-700">2</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Speed</h3>
               <p className="text-sm text-gray-600">
                 We value your time and guarantee fast processing and delivery while maintaining high quality standards
               </p>
             </div>
-            
-            <div className="bg-green-50 p-6 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-green-700">3</span>
+
+            <div className="bg-blue-50 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-700">3</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Variety</h3>
               <p className="text-sm text-gray-600">
@@ -230,9 +224,9 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-green-50 p-6 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-green-700">4</span>
+            <div className="bg-blue-50 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-700">4</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Global Reach</h3>
               <p className="text-sm text-gray-600">
