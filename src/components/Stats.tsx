@@ -9,9 +9,9 @@ const Stats = () => {
       description: 'With decades of experience, Nav Bharat Global has grown into a trusted name in international trade, exporting premium Basmati and Non-Basmati rice to diverse global markets. With expertise in sourcing, processing, and logistics, Nav Bharat Global combines traditional knowledge with modern practices to deliver excellence.',
       image: 'https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Award,
-      gradient: 'from-emerald-500 to-teal-600',
-      bgColor: 'bg-emerald-50',
-      textColor: 'text-emerald-700'
+      gradient: 'from-blue-500 to-blue-600',
+      bgColor: 'bg-blue-50',
+      textColor: 'text-blue-700'
     },
     {
       number: '40,000+',
@@ -19,9 +19,9 @@ const Stats = () => {
       description: 'With a robust capacity of exporting 40,000+ tons of rice annually, Nav Bharat Global stands as a trusted partner in meeting large-scale global demands. Our scale reflects not just volume, but the consistency, reliability, and excellence we bring to every shipment.',
       image: 'https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: TrendingUp,
-      gradient: 'from-lime-500 to-green-600',
-      bgColor: 'bg-lime-50',
-      textColor: 'text-lime-700'
+      gradient: 'from-blue-500 to-blue-600',
+      bgColor: 'bg-blue-50',
+      textColor: 'text-blue-700'
     }
   ];
 
@@ -117,8 +117,7 @@ const Stats = () => {
 
         {/* Bottom CTA Section */}
         <div className="mt-16 lg:mt-20 text-center">
-          <div className="bg-gradient-to-r from-emerald-500 to-lime-500 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"></div>
@@ -130,7 +129,7 @@ const Stats = () => {
                 Ready to Experience Our Excellence?
               </h3>
               <p className="text-lg sm:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
-              <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
                 Join hundreds of satisfied clients worldwide who trust Nav Bharat Global for premium rice exports
               </p>
               </p>
@@ -140,7 +139,6 @@ const Stats = () => {
                 </button>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
