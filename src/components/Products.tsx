@@ -5,6 +5,12 @@ import { Star, Leaf, Clock, CheckCircle } from 'lucide-react';
 const Products = () => {
   const products = [
     {
+      name: 'Basmati Rice',
+      description: 'Premium basmati varieties including 1121, 1718, 1509, Pusa 1401, Pusa, and Traditional basmati rice',
+      image: 'https://images.pexels.com/photos/4518659/pexels-photo-4518659.jpeg?auto=compress&cs=tinysrgb&w=400',
+      features: ['6 Varieties', 'Extra Long Grain', 'Aromatic']
+    },
+    {
       name: 'Parboiled Rice',
       description: 'High-quality parboiled rice varieties with excellent nutritional value and extended shelf life',
       image: 'https://images.pexels.com/photos/4110071/pexels-photo-4110071.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -38,7 +44,7 @@ const Products = () => {
             Our Premium Rice Collection
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our carefully curated selection of premium basmati rice varieties, 
+            Discover our carefully curated selection of premium rice varieties, 
             each offering unique characteristics and exceptional quality.
           </p>
         </div>
@@ -69,7 +75,7 @@ const Products = () => {
                   </div>
                   <Link
                     to="/contact"
-                    className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200 whitespace-nowrap flex-shrink-0"
+                    className="bg-[#000435] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#000435]/90 transition-colors duration-200 whitespace-nowrap flex-shrink-0"
                   >
                     Get Quote
                   </Link>
@@ -89,7 +95,7 @@ const Products = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 items-center justify-items-center">
             {/* ISO 22000 */}
             <div className="flex flex-col items-center space-y-3 p-4 hover:bg-gray-50 rounded-xl transition-colors duration-200">
-              <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-blue-100">
+              <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-[#000435]/10">
                 <img 
                   src="https://droppe.com/blog-admin/wp-content/uploads/2024/05/iso-22000.webp" 
                   alt="ISO 22000 Certification" 

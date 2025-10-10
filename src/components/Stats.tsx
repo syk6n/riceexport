@@ -9,9 +9,9 @@ const Stats = () => {
       description: 'With decades of experience, Nav Bharat Global has grown into a trusted name in international trade, exporting premium Basmati and Non-Basmati rice to diverse global markets. With expertise in sourcing, processing, and logistics, Nav Bharat Global combines traditional knowledge with modern practices to deliver excellence.',
       image: 'https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Award,
-      gradient: 'from-blue-500 to-blue-600',
-      bgColor: 'bg-blue-50',
-      textColor: 'text-blue-700'
+      gradient: 'from-[#000435] to-[#000435]',
+      bgColor: 'bg-[#000435]/10',
+      textColor: 'text-[#000435]'
     },
     {
       number: '40,000+',
@@ -19,9 +19,9 @@ const Stats = () => {
       description: 'With a robust capacity of exporting 40,000+ tons of rice annually, Nav Bharat Global stands as a trusted partner in meeting large-scale global demands. Our scale reflects not just volume, but the consistency, reliability, and excellence we bring to every shipment.',
       image: 'https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: TrendingUp,
-      gradient: 'from-blue-500 to-blue-600',
-      bgColor: 'bg-blue-50',
-      textColor: 'text-blue-700'
+      gradient: 'from-[#000435] to-[#000435]',
+      bgColor: 'bg-[#000435]/10',
+      textColor: 'text-[#000435]'
     }
   ];
 
@@ -32,7 +32,7 @@ const Stats = () => {
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm mb-4">
             <div className="w-2 h-2 bg-emerald-500 rounded-full mr-2"></div>
-            <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+            <div className="w-2 h-2 bg-[#000435] rounded-full mr-2"></div>
             <span className="text-sm font-medium text-gray-600">Our Achievements</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
@@ -62,7 +62,7 @@ const Stats = () => {
                   <div className="absolute top-6 right-6">
                     <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg">
                       <div className={`text-2xl sm:text-3xl font-bold ${stat.textColor}`}>
-                      <div className="text-2xl sm:text-3xl font-bold text-blue-600">
+                      <div className="text-2xl sm:text-3xl font-bold text-[#000435]">
                         {stat.number}
                       </div>
                       </div>
@@ -94,9 +94,9 @@ const Stats = () => {
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <div className="flex items-center justify-between">
                       <div className={`inline-flex items-center px-3 py-1 ${stat.bgColor} rounded-full`}>
-                      <div className="inline-flex items-center px-3 py-1 bg-blue-50 rounded-full">
+                      <div className="inline-flex items-center px-3 py-1 bg-[#000435]/10 rounded-full">
                         <span className={`text-xs font-medium ${stat.textColor}`}>
-                        <span className="text-xs font-medium text-blue-600">
+                        <span className="text-xs font-medium text-[#000435]">
                           Industry Leading
                         </span>
                         </span>
@@ -134,7 +134,7 @@ const Stats = () => {
               </p>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 shadow-lg">
+                <button className="bg-yellow-400 text-[#000435] px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 shadow-lg">
                   View Products
                 </button>
               </div>
