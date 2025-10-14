@@ -7,31 +7,31 @@ const Products = () => {
     {
       name: 'Basmati Rice',
       description: 'Premium basmati varieties including 1121, 1718, 1509, Pusa 1401, Pusa, and Traditional basmati rice',
-      image: 'https://drive.usercontent.google.com/download?id=15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt&export=view&authuser=0',
+      image: 'https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1',
       features: ['6 Varieties', 'Extra Long Grain', 'Aromatic']
     },
     {
       name: 'Parboiled Rice',
       description: 'High-quality parboiled rice varieties with excellent nutritional value and extended shelf life',
-      image: 'https://drive.usercontent.google.com/download?id=13MlbxOtRlwFWZFnk18gYggPDSgkqpT9A&export=view&authuser=0',
+      image: 'https://lh3.googleusercontent.com/d/13MlbxOtRlwFWZFnk18gYggPDSgkqpT9A=w1000?authuser=1',
       features: ['5% Broken', '10% Broken', 'Enhanced Nutrition']
     },
     {
       name: 'Sugandha & Sharbati Rice',
       description: 'Aromatic non-basmati rice varieties known for their distinctive fragrance and taste',
-      image: 'https://drive.usercontent.google.com/download?id=18TM5i39jfnmtnowESbgEHy6BPbaxY9Tk&export=view&authuser=0',
+      image: 'https://lh3.googleusercontent.com/d/1DL4pRCKKmg238fsCU6i7ZYEStP9fL9o4q=w1000?authuser=1',
       features: ['2 Varieties', 'Aromatic', 'Premium Quality']
     },
     {
       name: 'Organic Rice',
       description: 'Certified organic rice grown without synthetic pesticides or fertilizers for health-conscious consumers',
-      image: 'https://drive.usercontent.google.com/download?id=1aSii-mAWcayxTFtElfhi8f_K2imiUS0Y&export=view&authuser=0',
+      image: 'https://lh3.googleusercontent.com/d/1aSii-mAWcayxTFtElfhi8f_K2imiUS0Y=w1000?authuser=1',
       features: ['Certified Organic', 'Chemical-Free', 'Sustainable']
     },
     {
       name: 'Long, Medium & Short Grain Rice',
       description: 'Diverse range of grain sizes including 100% broken rice for various culinary applications',
-      image: 'https://drive.usercontent.google.com/download?id=15wAS2o_N6rwhjEIRWkVYsXV4F8e56ThA&export=view&authuser=0',
+      image: 'https://lh3.googleusercontent.com/d/15wAS2o_N6rwhjEIRWkVYsXV4F8e56ThA=w1000?authuser=1',
       features: ['4 Varieties', 'Multiple Grain Sizes', '100% Broken Available']
     }
   ];
