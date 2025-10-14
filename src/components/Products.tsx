@@ -19,7 +19,7 @@ const Products = () => {
     {
       name: 'Sugandha & Sharbati Rice',
       description: 'Aromatic non-basmati rice varieties known for their distinctive fragrance and taste',
-      image: 'https://lh3.googleusercontent.com/d/18TM5i39jfnmtnowESbgEHy6BPbaxY9Tk=w1000?authuser=1/view',
+      image: 'https://lh3.googleusercontent.com/d/1DL4pRCKKmg238fsCU6i7ZYEStP9fL9o4q=w1000?authuser=1',
       features: ['2 Varieties', 'Aromatic', 'Premium Quality']
     },
     {
@@ -83,6 +83,262 @@ const Products = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Basmati Rice Variants Section */}
+        <div className="mt-16 lg:mt-20">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Basmati Rice Varieties
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+              Explore our premium collection of basmati rice varieties, each with unique characteristics and exceptional quality
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* 1121 Basmati Rice */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  alt="1121 Basmati Rice"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 border-b-2 border-amber-100">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">1121 Basmati Rice</h3>
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  A premium variety of long-grain basmati rice, one of the most popular and highly demanded basmati rice types globally — known for its extra-long grain length, delicate aroma, and soft, fluffy texture when cooked.
+                </p>
+                <div className="space-y-3 border-t pt-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Grain Length:</span>
+                      <span className="text-gray-700"> Exceptionally long — can extend up to 8.2 mm after cooking</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Aroma:</span>
+                      <span className="text-gray-700"> Distinct, naturally aromatic fragrance characteristic of true basmati</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Texture:</span>
+                      <span className="text-gray-700"> Non-sticky and fluffy after cooking, with each grain remaining separate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 1718 Basmati Rice */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  alt="1718 Basmati Rice"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 border-b-2 border-amber-100">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">1718 Basmati Rice</h3>
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  A premium hybrid variety of basmati rice developed in India as an improved version of the traditional Pusa 1121 Basmati. A preferred export variety due to its consistent quality, excellent cooking characteristics, and improved productivity.
+                </p>
+                <div className="space-y-3 border-t pt-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Grain Length:</span>
+                      <span className="text-gray-700"> Long and slender</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Aroma:</span>
+                      <span className="text-gray-700"> Strong and natural basmati fragrance</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Texture:</span>
+                      <span className="text-gray-700"> Non-sticky, soft, and fluffy after cooking</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 1509 Basmati Rice */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  alt="1509 Basmati Rice"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 border-b-2 border-amber-100">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">1509 Basmati Rice</h3>
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  A popular and premium hybrid variety of basmati rice known for its extra-long grains, rich aroma, and light texture.
+                </p>
+                <div className="space-y-3 border-t pt-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Grain Length:</span>
+                      <span className="text-gray-700"> Very long and slender; elongates significantly after cooking</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Aroma:</span>
+                      <span className="text-gray-700"> Classic basmati fragrance, mild and pleasant</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Texture:</span>
+                      <span className="text-gray-700"> Fluffy, non-sticky, and soft — each grain remains separate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 1401 Basmati Rice */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  alt="1401 Basmati Rice"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 border-b-2 border-amber-100">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">1401 Basmati Rice</h3>
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  A superior hybrid variety of traditional basmati rice, prized for its long grain, rich aroma, and excellent cooking quality.
+                </p>
+                <div className="space-y-3 border-t pt-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Grain Length:</span>
+                      <span className="text-gray-700"> Extra-long and slender, elongates further when cooked</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Aroma:</span>
+                      <span className="text-gray-700"> Strong, authentic basmati fragrance — one of the most aromatic varieties</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Texture:</span>
+                      <span className="text-gray-700"> Soft and fluffy</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Pusa Basmati Rice */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100 md:col-span-2 lg:col-span-1">
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  alt="Pusa Basmati Rice"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 border-b-2 border-amber-100">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">Pusa Basmati Rice</h3>
+                <div className="flex items-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  A family of improved hybrid varieties of traditional basmati rice developed by the Indian Agricultural Research Institute (IARI), Pusa, New Delhi.
+                </p>
+                <div className="space-y-3 border-t pt-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Grain:</span>
+                      <span className="text-gray-700"> Long, slender, and aromatic — elongates beautifully after cooking</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Aroma:</span>
+                      <span className="text-gray-700"> Naturally fragrant, with the signature basmati scent</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Texture:</span>
+                      <span className="text-gray-700"> Soft, fluffy, and non-sticky after cooking</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-gray-900">Yield:</span>
+                      <span className="text-gray-700"> Higher productivity and shorter maturity period compared to traditional basmati</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Certifications Section */}
