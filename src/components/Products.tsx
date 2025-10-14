@@ -19,7 +19,7 @@ const Products = () => {
     {
       name: 'Sugandha & Sharbati Rice',
       description: 'Aromatic non-basmati rice varieties known for their distinctive fragrance and taste',
-      image: 'https://lh3.googleusercontent.com/d/1DL4pRCKKmg238fsCU6i7ZYEStP9fL9o4q=w1000?authuser=1',
+      image: 'https://lh3.googleusercontent.com/d/18TM5i39jfnmtnowESbgEHy6BPbaxY9Tk=w1000?authuser=1/view',
       features: ['2 Varieties', 'Aromatic', 'Premium Quality']
     },
     {
