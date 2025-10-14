@@ -57,7 +57,7 @@ const DarkHeader = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="font-medium transition-all duration-300 text-gray-900 hover:text-green-600"
+                  className="font-medium transition-all duration-300 text-gray-900 hover:text-blue-600"
                 >
                   {item.name}
                 </Link>
@@ -65,7 +65,7 @@ const DarkHeader = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-medium transition-all duration-300 text-gray-900 hover:text-green-600"
+                  className="font-medium transition-all duration-300 text-gray-900 hover:text-blue-600"
                 >
                   {item.name}
                 </a>
@@ -112,7 +112,7 @@ const DarkHeader = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="font-medium transition-colors duration-200 py-2 text-gray-900 hover:text-green-600"
+                    className="font-medium transition-colors duration-200 py-2 text-gray-900 hover:text-blue-600"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -121,7 +121,7 @@ const DarkHeader = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="font-medium transition-colors duration-200 py-2 text-gray-900 hover:text-green-600"
+                    className="font-medium transition-colors duration-200 py-2 text-gray-900 hover:text-blue-600"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
