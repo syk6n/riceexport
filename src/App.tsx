@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import DarkHeader from './components/DarkHeader';
 import Hero from './components/Hero';
 import AboutSection from './components/About';
@@ -11,9 +11,20 @@ import About from './pages/About';
 import Products from './pages/Products';
 import ContactPage from './pages/Contact';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <DarkHeader />
         <Routes>
