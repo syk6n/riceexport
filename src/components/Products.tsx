@@ -7,31 +7,31 @@ const Products = () => {
     {
       name: 'Basmati Rice',
       description: 'Premium basmati varieties including 1121, 1718, 1509, Pusa 1401, Pusa, and Traditional basmati rice',
-      image: 'https://images.pexels.com/photos/4518659/pexels-photo-4518659.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://drive.usercontent.google.com/download?id=15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt&export=view&authuser=0',
       features: ['6 Varieties', 'Extra Long Grain', 'Aromatic']
     },
     {
       name: 'Parboiled Rice',
       description: 'High-quality parboiled rice varieties with excellent nutritional value and extended shelf life',
-      image: 'https://images.pexels.com/photos/4110071/pexels-photo-4110071.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://drive.usercontent.google.com/download?id=13MlbxOtRlwFWZFnk18gYggPDSgkqpT9A&export=view&authuser=0',
       features: ['5% Broken', '10% Broken', 'Enhanced Nutrition']
     },
     {
       name: 'Sugandha & Sharbati Rice',
       description: 'Aromatic non-basmati rice varieties known for their distinctive fragrance and taste',
-      image: 'https://images.pexels.com/photos/4518659/pexels-photo-4518659.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://drive.usercontent.google.com/download?id=18TM5i39jfnmtnowESbgEHy6BPbaxY9Tk&export=view&authuser=0',
       features: ['2 Varieties', 'Aromatic', 'Premium Quality']
     },
     {
       name: 'Organic Rice',
       description: 'Certified organic rice grown without synthetic pesticides or fertilizers for health-conscious consumers',
-      image: 'https://images.pexels.com/photos/6131391/pexels-photo-6131391.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://drive.usercontent.google.com/download?id=1aSii-mAWcayxTFtElfhi8f_K2imiUS0Y&export=view&authuser=0',
       features: ['Certified Organic', 'Chemical-Free', 'Sustainable']
     },
     {
       name: 'Long, Medium & Short Grain Rice',
       description: 'Diverse range of grain sizes including 100% broken rice for various culinary applications',
-      image: 'https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://drive.usercontent.google.com/download?id=15wAS2o_N6rwhjEIRWkVYsXV4F8e56ThA&export=view&authuser=0',
       features: ['4 Varieties', 'Multiple Grain Sizes', '100% Broken Available']
     }
   ];
@@ -44,7 +44,7 @@ const Products = () => {
             Our Premium Rice Collection
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our carefully curated selection of premium rice varieties, 
+            Discover our carefully curated selection of premium basmati rice varieties, 
             each offering unique characteristics and exceptional quality.
           </p>
         </div>
