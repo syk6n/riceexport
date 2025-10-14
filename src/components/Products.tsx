@@ -39,54 +39,8 @@ const Products = () => {
   return (
     <section id="products" className="pt-32 pb-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">
-            Our Premium Rice Collection
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our carefully curated selection of premium basmati rice varieties, 
-            each offering unique characteristics and exceptional quality.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {products.map((product, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group flex flex-col h-full">
-              <div className="relative overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-amber-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
-                  Premium
-                </div>
-              </div>
-              
-              <div className="p-4 sm:p-6 flex flex-col flex-grow">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{product.name}</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed flex-grow">{product.description}</p>
-                
-                <div className="flex items-center justify-between mt-auto">
-                  <div className="flex items-center space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 text-amber-400 fill-current" />
-                    ))}
-                  </div>
-                  <Link
-                    to="/contact"
-                    className="bg-[#000435] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#000435]/90 transition-colors duration-200 whitespace-nowrap flex-shrink-0"
-                  >
-                    Get Quote
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
         {/* Basmati Rice Variants Section */}
-        <div className="mt-16 lg:mt-20">
+        <div className="mb-16 lg:mb-20">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Basmati Rice Varieties
@@ -339,6 +293,52 @@ const Products = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="text-center mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">
+            Our Premium Rice Collection
+          </h2>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover our carefully curated selection of premium basmati rice varieties,
+            each offering unique characteristics and exceptional quality.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {products.map((product, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group flex flex-col h-full">
+              <div className="relative overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-amber-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+                  Premium
+                </div>
+              </div>
+              
+              <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{product.name}</h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed flex-grow">{product.description}</p>
+                
+                <div className="flex items-center justify-between mt-auto">
+                  <div className="flex items-center space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 text-amber-400 fill-current" />
+                    ))}
+                  </div>
+                  <Link
+                    to="/contact"
+                    className="bg-[#000435] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#000435]/90 transition-colors duration-200 whitespace-nowrap flex-shrink-0"
+                  >
+                    Get Quote
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Certifications Section */}
