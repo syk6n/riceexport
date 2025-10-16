@@ -19,7 +19,7 @@ const Products = () => {
     {
       name: 'Sugandha & Sharbati Rice',
       description: 'Aromatic non-basmati rice varieties known for their distinctive fragrance and taste',
-      image: 'https://lh3.googleusercontent.com/d/18TM5i39jfnmtnowESbgEHy6BPbaxY9Tk=w1000?authuser=1/view',
+      image: 'https://lh3.googleusercontent.com/d/1DL4pRCKKmg238fsCU6i7ZYEStP9fL9o4q=w1000?authuser=1',
       features: ['2 Varieties', 'Aromatic', 'Premium Quality']
     },
     {
@@ -55,7 +55,7 @@ const Products = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
               <div className="relative overflow-hidden h-48">
                 <img
-                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  src="https://lh3.googleusercontent.com/d/1NwBTfEAW8r5D-rq1fwKCKiPDhxuF5yGz"
                   alt="1121 Basmati Rice"
                   className="w-full h-full object-cover"
                 />
@@ -102,7 +102,7 @@ const Products = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
               <div className="relative overflow-hidden h-48">
                 <img
-                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  src="https://lh3.googleusercontent.com/d/1oPDT_tvo0ziUc0gYn2LQlMCQ37oYPK38"
                   alt="1718 Basmati Rice"
                   className="w-full h-full object-cover"
                 />
@@ -149,7 +149,7 @@ const Products = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
               <div className="relative overflow-hidden h-48">
                 <img
-                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  src="https://lh3.googleusercontent.com/d/1HzusNxDXmWazkdzGGWTdOqeV6u-Fm6gr"
                   alt="1509 Basmati Rice"
                   className="w-full h-full object-cover"
                 />
@@ -196,7 +196,7 @@ const Products = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100">
               <div className="relative overflow-hidden h-48">
                 <img
-                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  src="https://lh3.googleusercontent.com/d/1gJ638gFo2ZlHdS_lcMVcrWBMvRZjl2ZV"
                   alt="1401 Basmati Rice"
                   className="w-full h-full object-cover"
                 />
@@ -243,7 +243,7 @@ const Products = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-2 border-amber-100 md:col-span-2 lg:col-span-1">
               <div className="relative overflow-hidden h-48">
                 <img
-                  src="https://lh3.googleusercontent.com/d/15NCbcpzmHKrMK8bXE-ZIQK35_xx0I7Kt=w1000?authuser=1"
+                  src="https://lh3.googleusercontent.com/d/1ZoZIuqX-BJq25KN-waUlljoApJdvX_W9"
                   alt="Pusa Basmati Rice"
                   className="w-full h-full object-cover"
                 />
