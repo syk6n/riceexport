@@ -30,7 +30,7 @@ const ContactPage = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-12 bg-gray-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900/20 to-lime-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-blue-800/30"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -40,14 +40,14 @@ const ContactPage = () => {
         </div>
         
         {/* Animated Banner */}
-        <div className="absolute bottom-0 left-0 right-0 bg-lime-400 py-3 overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 py-3 overflow-hidden" style={{ backgroundColor: '#000435' }}>
           <div className="animate-marquee whitespace-nowrap">
-            <span className="text-gray-900 font-semibold mx-8">🌾 Premium Rice Export</span>
-            <span className="text-gray-900 font-semibold mx-8">✨ Global Quality Standards</span>
-            <span className="text-gray-900 font-semibold mx-8">🚚 Global Outreach</span>
-            <span className="text-gray-900 font-semibold mx-8">🏆 50+ Years Experience</span>
-            <span className="text-gray-900 font-semibold mx-8">🌾 Premium Rice Export</span>
-            <span className="text-gray-900 font-semibold mx-8">✨ Global Quality Standards</span>
+            <span className="text-white font-semibold mx-8">🌾 Premium Rice Export</span>
+            <span className="text-white font-semibold mx-8">✨ Global Quality Standards</span>
+            <span className="text-white font-semibold mx-8">🚚 Global Outreach</span>
+            <span className="text-white font-semibold mx-8">🏆 25+ Years Experience</span>
+            <span className="text-white font-semibold mx-8">🌾 Premium Rice Export</span>
+            <span className="text-white font-semibold mx-8">✨ Global Quality Standards</span>
           </div>
         </div>
       </section>
@@ -60,7 +60,7 @@ const ContactPage = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="mb-8">
                 <div className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
-                  <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#000435' }}></div>
                   <span>Contact Us</span>
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -78,7 +78,7 @@ const ContactPage = () => {
                       value={formData.firstName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-lime-400 focus:border-lime-400 transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:border-blue-900 transition-colors duration-200" style={{ '--tw-ring-color': '#000435' } as React.CSSProperties}
                     />
                   </div>
                   <div>
@@ -89,7 +89,7 @@ const ContactPage = () => {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-lime-400 focus:border-lime-400 transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:border-blue-900 transition-colors duration-200" style={{ '--tw-ring-color': '#000435' } as React.CSSProperties}
                     />
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const ContactPage = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-lime-400 focus:border-lime-400 transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:border-blue-900 transition-colors duration-200" style={{ '--tw-ring-color': '#000435' } as React.CSSProperties}
                     />
                   </div>
                   <div>
@@ -114,7 +114,7 @@ const ContactPage = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-lime-400 focus:border-lime-400 transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:border-blue-900 transition-colors duration-200" style={{ '--tw-ring-color': '#000435' } as React.CSSProperties}
                     />
                   </div>
                 </div>
@@ -145,11 +145,11 @@ const ContactPage = () => {
 
                 <button
                   type="submit"
-                  className="bg-lime-400 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-lime-300 transition-colors duration-200 flex items-center group"
+                  className="text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-all duration-200 flex items-center group" style={{ backgroundColor: '#000435' }}
                 >
                   Send Message
-                  <div className="ml-3 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                    <Send className="w-4 h-4 text-lime-400" />
+                  <div className="ml-3 w-8 h-8 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                    <Send className="w-4 h-4" style={{ color: '#000435' }} />
                   </div>
                 </button>
               </form>
@@ -158,7 +158,7 @@ const ContactPage = () => {
             {/* Right Side - Contact Info */}
             <div className="space-y-8">
               {/* Address Card */}
-              <div className="bg-lime-400 rounded-2xl p-8 text-gray-900">
+              <div className="rounded-2xl p-8 text-white" style={{ backgroundColor: '#000435' }}>
                 <h3 className="text-2xl font-bold mb-6">Address</h3>
                 <div className="space-y-4">
                   <p className="text-lg">
@@ -177,14 +177,14 @@ const ContactPage = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-lime-600" />
+                    <Phone className="h-5 w-5" style={{ color: '#000435' }} />
                     <div>
                       <p className="text-gray-900 font-medium">+91 9810090228</p>
                       <p className="text-gray-900 font-medium">+91-11-47604760</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-lime-600" />
+                    <Mail className="h-5 w-5" style={{ color: '#000435' }} />
                     <div>
                       <p className="text-gray-900">info@navbharatglobal.com</p>
                       <p className="text-gray-900">dgoel@navbharatglobal.com</p>
@@ -197,20 +197,20 @@ const ContactPage = () => {
               <div className="bg-white rounded-2xl p-8 shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Stay Connected</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center hover:bg-lime-300 transition-colors duration-200">
-                    <Facebook className="w-6 h-6 text-gray-900" />
+                  <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center hover:opacity-90 transition-all duration-200" style={{ backgroundColor: '#000435' }}>
+                    <Facebook className="w-6 h-6 text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center hover:bg-lime-300 transition-colors duration-200">
-                    <Twitter className="w-6 h-6 text-gray-900" />
+                  <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center hover:opacity-90 transition-all duration-200" style={{ backgroundColor: '#000435' }}>
+                    <Twitter className="w-6 h-6 text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center hover:bg-lime-300 transition-colors duration-200">
-                    <Linkedin className="w-6 h-6 text-gray-900" />
+                  <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center hover:opacity-90 transition-all duration-200" style={{ backgroundColor: '#000435' }}>
+                    <Linkedin className="w-6 h-6 text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center hover:bg-lime-300 transition-colors duration-200">
-                    <Instagram className="w-6 h-6 text-gray-900" />
+                  <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center hover:opacity-90 transition-all duration-200" style={{ backgroundColor: '#000435' }}>
+                    <Instagram className="w-6 h-6 text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center hover:bg-lime-300 transition-colors duration-200">
-                    <Globe className="w-6 h-6 text-gray-900" />
+                  <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center hover:opacity-90 transition-all duration-200" style={{ backgroundColor: '#000435' }}>
+                    <Globe className="w-6 h-6 text-white" />
                   </a>
                 </div>
               </div>
@@ -223,7 +223,7 @@ const ContactPage = () => {
       <section className="py-16 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Let's <span className="text-lime-400">Connect</span> there
+            Let's <span className="text-yellow-400">Connect</span> there
           </h2>
         </div>
       </section>
