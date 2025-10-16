@@ -4,7 +4,7 @@ import { Award, TrendingUp } from 'lucide-react';
 const Stats = () => {
   const stats = [
     {
-      number: '25+',
+      number: '50+',
       label: 'Years of Experience',
       description: 'With decades of experience, Nav Bharat Global has grown into a trusted name in international trade, exporting premium Basmati and Non-Basmati rice to diverse global markets. With expertise in sourcing, processing, and logistics, Nav Bharat Global combines traditional knowledge with modern practices to deliver excellence.',
       image: 'https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=800',

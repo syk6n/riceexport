@@ -45,7 +45,7 @@ const ContactPage = () => {
             <span className="text-gray-900 font-semibold mx-8">🌾 Premium Rice Export</span>
             <span className="text-gray-900 font-semibold mx-8">✨ Global Quality Standards</span>
             <span className="text-gray-900 font-semibold mx-8">🚚 Global Outreach</span>
-            <span className="text-gray-900 font-semibold mx-8">🏆 25+ Years Experience</span>
+            <span className="text-gray-900 font-semibold mx-8">🏆 50+ Years Experience</span>
             <span className="text-gray-900 font-semibold mx-8">🌾 Premium Rice Export</span>
             <span className="text-gray-900 font-semibold mx-8">✨ Global Quality Standards</span>
           </div>
