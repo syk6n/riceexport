@@ -80,7 +80,7 @@ const DarkHeader = () => {
                 ? 'bg-yellow-400 text-gray-900 hover:bg-yellow-300 shadow-lg'
                 : 'bg-yellow-400 text-gray-900 hover:bg-yellow-300'
             }`}>
-              Contact
+              Get in touch
             </Link>
           </div>
 
@@ -130,7 +130,7 @@ const DarkHeader = () => {
               ))}
             <div className="pt-4 space-y-2 border-t border-gray-200">
                 <Link to="/contact" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-colors duration-200 w-full text-center block" onClick={() => setIsMenuOpen(false)}>
-                  Contact
+                  Get in touch
                 </Link>
               </div>
             </nav>
