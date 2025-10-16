@@ -62,7 +62,7 @@ const ContactSection = () => {
               <div className="text-gray-600">Countries</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#000435] mb-2">25+</div>
+              <div className="text-4xl font-bold text-[#000435] mb-2">50+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div>
