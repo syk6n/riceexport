@@ -31,7 +31,7 @@ const CompanyValues = () => {
             <div className="flex justify-center mb-4 lg:mb-6">
               <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-yellow-400/30 shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src="https://lh3.googleusercontent.com/d/1hoseG_t-jNBE3EYIse1N5CTNVU3FSRfq=w1000?authuser=1/view"
                   alt="Quality Excellence"
                   className="w-full h-full object-cover"
                 />
@@ -52,7 +52,7 @@ const CompanyValues = () => {
             <div className="flex justify-center mb-4 lg:mb-6">
               <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-yellow-400/30 shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/4110071/pexels-photo-4110071.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src="https://lh3.googleusercontent.com/d/12pgx863BVfvY5sYSMqnOqBoR-Q7DOABS=w1000?authuser=1/view"
                   alt="SUPPLY CHAIN"
                   className="w-full h-full object-cover"
                 />
@@ -73,7 +73,7 @@ const CompanyValues = () => {
             <div className="flex justify-center mb-4 lg:mb-6">
               <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-full overflow-hidden border-4 border-yellow-400/30 shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src="https://lh3.googleusercontent.com/d/1ZX7QtbK8yvluzELz44MksVJdSG1C_aDu=w1000?authuser=1/view"
                   alt="Global Reach"
                   className="w-full h-full object-cover"
                 />
