@@ -184,28 +184,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#000435]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
-              Ready to Experience Premium Quality Rice?
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/80 mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
-              Discover our comprehensive range of premium basmati rice varieties, each carefully selected and processed to meet international quality standards.
-            </p>
-            <div className="flex justify-center">
-              <Link
-                to="/products"
-                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 inline-flex items-center group"
-              >
-                View Our Products
-                <Send className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Achievements Timeline Section */}
       <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -513,6 +491,28 @@ const About = () => {
         </div>
       </section>
 
+            {/* CTA Section */}
+      <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#000435]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
+              Ready to Experience Premium Quality Rice?
+            </h2>
+            <p className="text-base sm:text-lg lg:text-xl text-white/80 mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
+              Discover our comprehensive range of premium basmati rice varieties, each carefully selected and processed to meet international quality standards.
+            </p>
+            <div className="flex justify-center">
+              <Link
+                to="/products"
+                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 inline-flex items-center group"
+              >
+                View Our Products
+                <Send className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
