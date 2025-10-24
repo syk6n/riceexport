@@ -65,7 +65,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/6131391/pexels-photo-6131391.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://lh3.googleusercontent.com/d/13kADFsVTW0VwBecl-RZTEHR5ljrYkq-y=w1000?authuser=1"
                 alt="Rice plants and grains"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
               />
@@ -80,7 +80,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/4518659/pexels-photo-4518659.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://lh3.googleusercontent.com/d/1_GtPrYOBQCqLdUJX5yL0SUyI6RK8tITu=w1000?authuser=1"
                 alt="Rice expertise and manufacturing"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
               />
@@ -111,7 +111,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/6130374/pexels-photo-6130374.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://lh3.googleusercontent.com/d/1dxILYTVB1P4FEFe6vHX2ISxxiYZznBU1=w1000?authuser=1"
                 alt="Quality control and commitment"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
               />
@@ -126,7 +126,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://lh3.googleusercontent.com/d/1RQ_mQs3Vk_Sk0oGMATv4B9R_3vs9px5g=w1000?authuser=1"
                 alt="Global vision and leadership"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
               />
@@ -157,7 +157,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1094137/pexels-photo-1094137.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://lh3.googleusercontent.com/d/1GBw4DAocaPKcAihsgyOFXuxAjIPvLApR=w1000?authuser=1"
                 alt="Years of rice export experience"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl"
               />
