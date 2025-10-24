@@ -16,29 +16,43 @@ const About = () => {
       case 'About Us':
         return {
           title: 'Who We Are at NavBharat',
-          content: 'At Nav Bharat Global, we are more than just rice exporters — we are ambassadors of India’s rich agricultural heritage. With years of expertise in sourcing, processing, and logistics, we have built a reputation for trust, consistency, and excellence.',
-          description: 'We strongly believe that quality has a strong relation with customer confidence which is closely linked with growth. For us, every customer is a partner. Our commitment lies in providing timely service, transparent processes, and premium products that add value to your business.'
+          content: 'At Nav Bharat Global, we are more than just rice exporters - we are ambassadors of India\'s rich agricultural heritage. With years of expertise in sourcing, processing, and logistics, we have built a reputation for trust, consistency, and excellence.',
+          description: 'We strongly believe that quality has a strong relation with customer confidence which is closely linked with growth. For us, every customer is a partner. Our commitment lies in providing timely service, transparent processes, and premium products that add value to your business.',
+          image: 'https://lh3.googleusercontent.com/d/1Go4CQtz--klBf4GSlVKpsOFlttmeZ7Mz=w1000?authuser=1',
+          imageAlt: 'Rice fields and agricultural heritage'
         };
       case 'Journey':
         return {
           title: 'Our Export Journey',
           content: 'NavBharat Global has established itself as a trusted name in the rice export industry, building strong partnerships with customers across multiple continents.',
-          description: 'Our journey is marked by consistent growth, unwavering commitment to quality, and the trust of our international partners who rely on us for premium basmati rice supplies.'
+          description: 'Our journey is marked by consistent growth, unwavering commitment to quality, and the trust of our international partners who rely on us for premium basmati rice supplies.',
+          image: 'https://www.ifpri.org/wp-content/uploads/2023/07/india-rice-raking.jpeg',
+          imageAlt: 'Global shipping and export operations'
         };
       case 'Vision':
         return {
           title: 'Our Vision for the Future',
-          content: 'To be recognized worldwide for delivering premium Indian rice with integrity, excellence, and enduring partnerships.',
-          description: 'We aim to expand our reach to new markets while maintaining our commitment to quality, building lasting relationships, and contributing to the growth of the global rice trade.'
+          content: 'To be recognized worldwide for delivering premium Indian rice with integrity, excellence, and enduring partnerships.',
+          description: 'We aim to expand our reach to new markets while maintaining our commitment to quality, building lasting relationships, and contributing to the growth of the global rice trade.',
+          image: 'https://lh3.googleusercontent.com/d/1RQ_mQs3Vk_Sk0oGMATv4B9R_3vs9px5g=w1000?authuser=1',
+          imageAlt: 'Future vision and global reach'
         };
       case 'Mission':
         return {
           title: 'Our Mission Statement',
-          content: 'To be the preferred choice for international buyers seeking top-quality rice products from India while ensuring customer satisfaction through integrity, reliability, and excellence in every grain.',
-          description: 'We are committed to sourcing the finest basmati rice varieties, ensuring proper processing and packaging, and delivering exceptional value to our customers worldwide.'
+          content: 'To be the preferred choice for international buyers seeking top-quality rice products from India while ensuring customer satisfaction through integrity, reliability, and excellence in every grain.',
+          description: 'We are committed to sourcing the finest basmati rice varieties, ensuring proper processing and packaging, and delivering exceptional value to our customers worldwide.',
+          image: 'https://lh3.googleusercontent.com/d/1kpUbOkLsXJ-BDLZSYcVS4QFxuihhHe53=w1000?authuser=1',
+          imageAlt: 'Quality rice products and packaging'
         };
       default:
-        return tabs[0];
+        return {
+          title: 'Who We Are at NavBharat',
+          content: 'At Nav Bharat Global, we are more than just rice exporters - we are ambassadors of India\'s rich agricultural heritage.',
+          description: 'We strongly believe that quality has a strong relation with customer confidence which is closely linked with growth.',
+          image: 'https://lh3.googleusercontent.com/d/1Go4CQtz--klBf4GSlVKpsOFlttmeZ7Mz=w1000?authuser=1',
+          imageAlt: 'Rice fields and agricultural heritage'
+        };
     }
   };
 
@@ -47,7 +61,6 @@ const About = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Tab Navigation */}
         <div className="flex flex-wrap gap-2 mb-8 lg:mb-12 justify-center sm:justify-start">
           {tabs.map((tab) => (
             <button
@@ -64,22 +77,21 @@ const About = () => {
           ))}
         </div>
 
-        {/* Content */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-4 lg:space-y-6">
             <div className="flex items-center space-x-2 text-sm text-gray-600">
               <div className="w-2 h-2 bg-[#000435] rounded-full"></div>
               <span>{content.title}</span>
             </div>
-            
+
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
               {content.content}
             </h2>
-            
+
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               {content.description}
             </p>
-            
+
             <button className="inline-flex items-center text-gray-900 font-medium hover:text-gray-700 transition-colors duration-200 group">
               Learn More
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -88,8 +100,8 @@ const About = () => {
 
           <div className="relative">
             <img
-              src="https://safiorganics.co.ke/wp-content/uploads/2022/10/goa6.webp"
-              alt="Rice farming and export operations"
+              src={content.image}
+              alt={content.imageAlt}
               className="w-full h-64 sm:h-80 lg:h-96 xl:h-[500px] object-cover rounded-2xl shadow-lg"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
