@@ -28,7 +28,7 @@ const About = () => {
       case 'Vision':
         return {
           title: 'Our Vision for the Future',
-          content: 'To be recognized as a trusted global leader in rice exports, exceeding customer expectations by consistently delivering maintaining the highest standards of professionalism, and fostering long-lasting relationships and connecting the world through the richness of Indian rice.',
+          content: 'To be recognized worldwide for delivering premium Indian rice with integrity, excellence, and enduring partnerships.',
           description: 'We aim to expand our reach to new markets while maintaining our commitment to quality, building lasting relationships, and contributing to the growth of the global rice trade.'
         };
       case 'Mission':
