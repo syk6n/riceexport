@@ -172,7 +172,7 @@ const About = () => {
           <div className="bg-[#000435]/5 rounded-2xl lg:rounded-3xl p-6 lg:p-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 text-center">
               <div>
-                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#000435] mb-1 lg:mb-2">25</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#000435] mb-1 lg:mb-2">50</div>
                 <div className="text-gray-600 text-sm sm:text-base lg:text-lg">Years in Market</div>
               </div>
               <div>
