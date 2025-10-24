@@ -7,31 +7,31 @@ const Products = () => {
     {
       name: 'Sugandha Rice',
       description: 'It is a popular non-basmati aromatic long-grain rice variety with a pleasant aroma similar to Basmati but slightly milder. The cooked grains are fluffy, non-sticky, and have a soft texture with a delicate flavor.',
-      image: 'https://lh3.googleusercontent.com/d/13MlbxOtRlwFWZFnk18gYggPDSgkqpT9A=w1000?authuser=1',
+      image: 'https://lh3.googleusercontent.com/d/1OOM2strGQF1nVYjN6KWr66G2xzNIUvgn=w1000?authuser=1',
       features: ['Aromatic', 'Fluffy', 'Non-sticky']
     },
     {
       name: 'Sharbati Rice',
       description: 'Sharbati Rice is a premium non-basmati variety known for its naturally sweet aroma, long slender grains, and soft, fluffy texture after cooking. Perfect for everyday meals, it offers the richness of basmati at an affordable price.',
-      image: 'https://lh3.googleusercontent.com/d/1DL4pRCKKmg238fsCU6i7ZYEStP9fL9o4q=w1000?authuser=1',
+      image: 'https://lh3.googleusercontent.com/d/1YiNCaNJNYIm4Lw2lpmHAlRk-0kUZyEyN=w1000?authuser=1',
       features: ['Sweet Aroma', 'Long Slender', 'Affordable']
     },
     {
       name: 'PR 11/14',
       description: 'PR 11/14 Rice is a long-grain non-basmati variety known for its excellent grain length, high yield, and affordability. Light, fluffy, and aromatic after cooking, it\'s ideal for everyday meals and large-scale catering.',
-      image: 'https://lh3.googleusercontent.com/d/1aSii-mAWcayxTFtElfhi8f_K2imiUS0Y=w1000?authuser=1',
+      image: 'https://lh3.googleusercontent.com/d/1Kq0pwFAgs0c-kG8sJb06hR6fnzC604Vk=w1000?authuser=1',
       features: ['Long Grain', 'High Yield', 'Affordable']
     },
     {
       name: 'IR 64',
       description: 'IR 64 Rice is a high-yield, medium-long grain non-basmati variety known for its consistency, affordability, and soft texture after cooking. Widely used for everyday meals and bulk catering, it offers excellent value.',
-      image: 'https://lh3.googleusercontent.com/d/15wAS2o_N6rwhjEIRWkVYsXV4F8e56ThA=w1000?authuser=1',
+      image: 'https://lh3.googleusercontent.com/d/1IDagmphfYfcmfYLJk1mxBi-UGM0heFNW=w1000?authuser=1',
       features: ['Medium-Long Grain', 'High Yield', 'Consistent']
     },
     {
       name: 'Sona Masoori',
       description: 'Sona Masoori Rice is a lightweight, medium-grain variety known for its delicate aroma and soft, fluffy texture.',
-      image: 'https://lh3.googleusercontent.com/d/1aSii-mAWcayxTFtElfhi8f_K2imiUS0Y=w1000?authuser=1',
+      image: 'https://lh3.googleusercontent.com/d/12RnwTqif153HMloZzdOsnVK3C_UGugjl=w1000?authuser=1',
       features: ['Lightweight', 'Medium Grain', 'Delicate Aroma']
     }
   ];
