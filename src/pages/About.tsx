@@ -90,7 +90,7 @@ const About = () => {
                 Our Expertise
               </h2>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                Started in 1920, Nav Bharat Global ranks among the India's most efficient and reliable rice company with a continuous emphasis to build onto its overall rice portfolio serving markets worldwide. With years of experience and expertise in the industry, our focus lies in sourcing, manufacturing, and delivering high-quality rice products to international markets.
+                Started in 1980, Nav Bharat Global ranks among the India's most efficient and reliable rice company with a continuous emphasis to build onto its overall rice portfolio serving markets worldwide. With years of experience and expertise in the industry, our focus lies in sourcing, manufacturing, and delivering high-quality rice products to international markets.
               </p>
             </div>
           </div>
