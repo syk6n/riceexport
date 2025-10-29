@@ -26,7 +26,7 @@ const About = () => {
           title: 'Our Export Journey',
           content: 'NavBharat Global has established itself as a trusted name in the rice export industry, building strong partnerships with customers across multiple continents.',
           description: 'Our journey is marked by consistent growth, unwavering commitment to quality, and the trust of our international partners who rely on us for premium basmati rice supplies.',
-          image: 'https://www.ifpri.org/wp-content/uploads/2023/07/india-rice-raking.jpeg',
+          image: 'https://lh3.googleusercontent.com/d/1VI08IkjmJzkKF_OsVLFsxbeMpPYXMM6m=w1000?authuser=1',
           imageAlt: 'Global shipping and export operations'
         };
       case 'Vision':

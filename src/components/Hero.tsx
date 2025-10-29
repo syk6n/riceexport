@@ -12,7 +12,7 @@ const Hero = () => {
       alt: 'Farmer working in rice fields at sunset'
     },
     {
-      image: 'https://i.natgeofe.com/n/9787e61f-fb42-454e-b268-3bb879710241/prod-yourshot-659642-6298072-copy.jpg',
+      image: 'https://lh3.googleusercontent.com/d/1NBsKGHvliReHd9ogcyl7h_Hn0kmmKAog=w1000?authuser=1',
       alt: 'Rice fields landscape'
     },
     {
