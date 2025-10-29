@@ -8,11 +8,11 @@ const Hero = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: 'https://lh3.googleusercontent.com/d/1NBsKGHvliReHd9ogcyl7h_Hn0kmmKAog=w1000?authuser=1',
       alt: 'Farmer working in rice fields at sunset'
     },
     {
-      image: 'https://lh3.googleusercontent.com/d/1NBsKGHvliReHd9ogcyl7h_Hn0kmmKAog=w1000?authuser=1',
+      image: 'https://i.natgeofe.com/n/9787e61f-fb42-454e-b268-3bb879710241/prod-yourshot-659642-6298072-copy.jpg',
       alt: 'Rice fields landscape'
     },
     {
