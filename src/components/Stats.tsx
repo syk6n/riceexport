@@ -1,7 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Award, TrendingUp } from 'lucide-react';
 
 const Stats = () => {
+  const [happyClients, setHappyClients] = useState(0);
+  const [countries, setCountries] = useState(0);
+  const [yearsExperience, setYearsExperience] = useState(0);
+  const [satisfaction, setSatisfaction] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const statsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+
+          const animateValue = (setter: (val: number) => void, end: number, duration: number, suffix = '') => {
+            const start = 0;
+            const increment = end / (duration / 16);
+            let current = start;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= end) {
+                setter(end);
+                clearInterval(timer);
+              } else {
+                setter(Math.floor(current));
+              }
+            }, 16);
+          };
+
+          animateValue(setHappyClients, 500, 2000);
+          animateValue(setCountries, 25, 2000);
+          animateValue(setYearsExperience, 50, 2000);
+          animateValue(setSatisfaction, 100, 2000);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
   const stats = [
     {
       number: '50+',
@@ -28,6 +73,27 @@ const Stats = () => {
   return (
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div ref={statsRef} className="mb-12 lg:mb-20 bg-white rounded-2xl p-6 lg:p-8 shadow-lg">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-[#000435] mb-2">{happyClients}+</div>
+              <div className="text-gray-600">Happy Clients</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-[#000435] mb-2">{countries}+</div>
+              <div className="text-gray-600">Countries</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-[#000435] mb-2">{yearsExperience}+</div>
+              <div className="text-gray-600">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-[#000435] mb-2">{satisfaction}%</div>
+              <div className="text-gray-600">Customer Satisfaction</div>
+            </div>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-sm mb-4">
@@ -113,33 +179,6 @@ const Stats = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom CTA Section */}
-        <div className="mt-16 lg:mt-20 text-center">
-          <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"></div>
-              <div className="absolute bottom-0 right-0 w-48 h-48 bg-white rounded-full translate-x-24 translate-y-24"></div>
-            </div>
-            
-            <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-                Ready to Experience Our Excellence?
-              </h3>
-              <p className="text-lg sm:text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
-              <p className="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-                Join hundreds of satisfied clients worldwide who trust Nav Bharat Global for premium rice exports
-              </p>
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-yellow-400 text-[#000435] px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors duration-200 shadow-lg">
-                  View Products
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

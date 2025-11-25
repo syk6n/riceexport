@@ -1,52 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const ContactSection = () => {
-  const [happyClients, setHappyClients] = useState(0);
-  const [countries, setCountries] = useState(0);
-  const [yearsExperience, setYearsExperience] = useState(0);
-  const [satisfaction, setSatisfaction] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
-  const statsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-
-          const animateValue = (setter: (val: number) => void, end: number, duration: number, suffix = '') => {
-            const start = 0;
-            const increment = end / (duration / 16);
-            let current = start;
-
-            const timer = setInterval(() => {
-              current += increment;
-              if (current >= end) {
-                setter(end);
-                clearInterval(timer);
-              } else {
-                setter(Math.floor(current));
-              }
-            }, 16);
-          };
-
-          animateValue(setHappyClients, 500, 2000);
-          animateValue(setCountries, 25, 2000);
-          animateValue(setYearsExperience, 50, 2000);
-          animateValue(setSatisfaction, 100, 2000);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [hasAnimated]);
   return (
     <section id="contact" className="py-20 bg-[#000435]/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,27 +49,6 @@ const ContactSection = () => {
             <span>Send Us a Message</span>
             <Send className="h-5 w-5" />
           </Link>
-        </div>
-
-        <div ref={statsRef} className="mt-12 lg:mt-20 bg-white rounded-2xl p-6 lg:p-8 shadow-lg">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-[#000435] mb-2">{happyClients}+</div>
-              <div className="text-gray-600">Happy Clients</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-[#000435] mb-2">{countries}+</div>
-              <div className="text-gray-600">Countries</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-[#000435] mb-2">{yearsExperience}+</div>
-              <div className="text-gray-600">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-[#000435] mb-2">{satisfaction}%</div>
-              <div className="text-gray-600">Customer Satisfaction</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
