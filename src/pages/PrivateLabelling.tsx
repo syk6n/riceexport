@@ -1,12 +1,30 @@
+import { useState } from 'react';
 import DarkHeader from '../components/DarkHeader';
-import Footer from '../components/Footer';
 
 const PrivateLabelling = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   const packagingOptions = [
-    { name: 'Jute Bags (Natural Brown)' },
-    { name: 'Bleached White Jute' },
-    { name: 'Standard P.P. Bags' },
-    { name: 'BOPP Bags' },
+    {
+      name: 'Jute Bags (Natural Brown)',
+      image1: 'https://lh3.googleusercontent.com/d/11te70a2KZetH1BxibFzSJYsJM_qX4lEi=w1000?authuser=1',
+      image2: 'https://lh3.googleusercontent.com/d/1gkbb7PD_CvL6AsaIpPFyFA2HA6Ix5jJg=w1000?authuser=1'
+    },
+    {
+      name: 'Bleached White Jute',
+      image1: 'https://lh3.googleusercontent.com/d/1z7puLAZ50XHElkf5LUyfKm41zLdSLWub=w1000?authuser=1',
+      image2: 'https://lh3.googleusercontent.com/d/14gJJXM9kmiKvMYlYIwrR4XwmY8QiT9dR=w1000?authuser=1'
+    },
+    {
+      name: 'Standard P.P. Bags',
+      image1: 'https://lh3.googleusercontent.com/d/1I5cZJq8ev1WMvzRXkuev9Pci7JgF91w9=w1000?authuser=1',
+      image2: 'https://lh3.googleusercontent.com/d/1RAEtEeBZIOR0i4xh4YX9ivJ8nMUfGeUC=w1000?authuser=1'
+    },
+    {
+      name: 'BOPP Bags',
+      image1: 'https://lh3.googleusercontent.com/d/130Vpu93UnDxLUyf8YPDhKpjYRtKLMq_W=w1000?authuser=1',
+      image2: 'https://lh3.googleusercontent.com/d/1hmwYDuumgGCVwUyoZc9E4gBl3yMSdK2w=w1000?authuser=1'
+    },
     { name: 'Non Woven Bags' },
     { name: 'Consumer Polypacks' },
     { name: 'Cotton Bags' }
@@ -39,12 +57,23 @@ const PrivateLabelling = () => {
               {packagingOptions.slice(0, 4).map((option, index) => (
                 <div
                   key={index}
-                  className="aspect-square bg-gray-100 rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300"
+                  className="aspect-square bg-gray-100 rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300 relative"
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
                 >
-                  <div className="w-full h-full flex items-center justify-center p-8">
-                    <h3 className="text-xl font-semibold text-[#000435] text-center">
-                      {option.name}
-                    </h3>
+                  <div className="w-full h-full relative">
+                    <img
+                      src={option.image1}
+                      alt={option.name}
+                      className="w-full h-full object-cover absolute inset-0 transition-opacity duration-500"
+                      style={{ opacity: hoveredIndex === index ? 0 : 1 }}
+                    />
+                    <img
+                      src={option.image2}
+                      alt={option.name}
+                      className="w-full h-full object-cover absolute inset-0 transition-opacity duration-500"
+                      style={{ opacity: hoveredIndex === index ? 1 : 0 }}
+                    />
                   </div>
                 </div>
               ))}
@@ -52,16 +81,16 @@ const PrivateLabelling = () => {
           </div>
 
           <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-8 sm:p-12 lg:p-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#000435] mb-8 text-center">
-              Additional Packaging Solutions
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#000435] mb-12 text-center">
+              All Packaging Solutions
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {packagingOptions.slice(4).map((option, index) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {packagingOptions.map((option, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow duration-200"
+                  className="bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200"
                 >
-                  <h3 className="text-lg font-semibold text-[#000435]">
+                  <h3 className="text-base font-semibold text-[#000435]">
                     {option.name}
                   </h3>
                 </div>
@@ -70,8 +99,6 @@ const PrivateLabelling = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3">
@@ -52,25 +52,14 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Home</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">About Us</a></li>
-              <li><a href="#products" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Products</a></li>
-              <li><a href="#testimonials" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Testimonials</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Contact</a></li>
+              <li><a href="/" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Home</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">About Us</a></li>
+              <li><a href="/products" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Products</a></li>
+              <li><a href="/private-labelling" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Private Labelling</a></li>
+              <li><a href="/contact" className="text-gray-300 hover:text-[#facc15] transition-colors duration-200">Contact</a></li>
             </ul>
           </div>
 
-          {/* Products */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Our Products</h4>
-            <ul className="space-y-3">
-              <li className="text-gray-300">Basmati Rice 1121</li>
-              <li className="text-gray-300">Traditional Basmati</li>
-              <li className="text-gray-300">Organic Basmati</li>
-              <li className="text-gray-300">Pusa Basmati</li>
-              <li className="text-gray-300">Steam Basmati</li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Section */}
