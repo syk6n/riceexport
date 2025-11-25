@@ -61,7 +61,7 @@ const Stats = () => {
     {
       number: '40,000+',
       label: 'Tons Exported Annually',
-      description: 'With a robust capacity of exporting 40,000+ tons of rice annually, Nav Bharat Global stands as a trusted partner in meeting large-scale global demands. Our scale reflects not just volume, but the consistency, reliability, and excellence we bring to every shipment.',
+      description: 'Currently, with a robust capacity of exporting 40,000+ tons of rice annually to importers worldwide, Nav Bharat Global stands as a trusted partner in meeting large-scale global demands. Our scale reflects not just volume, but the consistency, reliability, and excellence we bring to every shipment.',
       image: 'https://images.pexels.com/photos/4198935/pexels-photo-4198935.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: TrendingUp,
       gradient: 'from-[#000435] to-[#000435]',
