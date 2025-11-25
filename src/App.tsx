@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import About from './pages/About';
 import Products from './pages/Products';
 import ContactPage from './pages/Contact';
+import PrivateLabelling from './pages/PrivateLabelling';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -39,6 +40,7 @@ function App() {
           } />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/private-labelling" element={<PrivateLabelling />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

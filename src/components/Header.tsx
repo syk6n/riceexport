@@ -20,6 +20,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Products', href: '/products' },
+    { name: 'Private Labelling', href: '/private-labelling' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -72,8 +73,8 @@ const Header = () => {
                   to={item.href}
                   className={`font-medium transition-all duration-300 ${
                     isScrolled
-                      ? 'text-gray-800 hover:text-gray-600'
-                      : 'text-white/90 hover:text-white'
+                      ? 'text-gray-800 hover:text-blue-600'
+                      : 'text-white/90 hover:text-blue-400'
                   }`}
                 >
                   {item.name}
@@ -84,8 +85,8 @@ const Header = () => {
                   href={item.href}
                   className={`font-medium transition-all duration-300 ${
                     isScrolled
-                      ? 'text-gray-800 hover:text-gray-600'
-                      : 'text-white/90 hover:text-white'
+                      ? 'text-gray-800 hover:text-blue-600'
+                      : 'text-white/90 hover:text-blue-400'
                   }`}
                 >
                   {item.name}
@@ -129,8 +130,8 @@ const Header = () => {
                     to={item.href}
                     className={`font-medium transition-colors duration-200 py-2 ${
                       isScrolled
-                        ? 'text-gray-800 hover:text-gray-600'
-                        : 'text-white/90 hover:text-white'
+                        ? 'text-gray-800 hover:text-blue-600'
+                        : 'text-white/90 hover:text-blue-400'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -142,8 +143,8 @@ const Header = () => {
                     href={item.href}
                     className={`font-medium transition-colors duration-200 py-2 ${
                       isScrolled
-                        ? 'text-gray-800 hover:text-gray-600'
-                        : 'text-white/90 hover:text-white'
+                        ? 'text-gray-800 hover:text-blue-600'
+                        : 'text-white/90 hover:text-blue-400'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
