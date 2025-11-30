@@ -8,7 +8,7 @@ const Hero = () => {
 
   const slides = [
     {
-      image: 'https://lh3.googleusercontent.com/d/1NBsKGHvliReHd9ogcyl7h_Hn0kmmKAog=w1000?authuser=1',
+      image: 'http://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=1920',
       alt: 'Farmer working in rice fields at sunset'
     },
     {

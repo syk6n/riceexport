@@ -10,7 +10,9 @@ const About = () => {
     message: ''
   });
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
+  const [visibleFeatures, setVisibleFeatures] = useState<Set<number>>(new Set());
   const timelineRef = useRef<HTMLDivElement>(null);
+  const featuresRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,6 +35,32 @@ const About = () => {
 
     return () => {
       timelineItems?.forEach((item) => observer.unobserve(item));
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute('data-feature-index') || '0');
+            setTimeout(() => {
+              setVisibleFeatures((prev) => new Set(prev).add(index));
+            }, index * 200);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    const featureItems = featuresRef.current?.querySelectorAll('.feature-item');
+    featureItems?.forEach((item) => observer.observe(item));
+
+    return () => {
+      featureItems?.forEach((item) => observer.unobserve(item));
     };
   }, []);
 
@@ -428,8 +456,13 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            <div className="bg-[#000435]/5 p-6 rounded-2xl text-center">
+          <div ref={featuresRef} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div
+              className={`feature-item bg-[#000435]/5 p-6 rounded-2xl text-center transition-all duration-700 ${
+                visibleFeatures.has(0) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              data-feature-index="0"
+            >
               <div className="w-16 h-16 bg-[#000435]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-[#000435]">1</span>
               </div>
@@ -439,7 +472,12 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-[#000435]/5 p-6 rounded-2xl text-center">
+            <div
+              className={`feature-item bg-[#000435]/5 p-6 rounded-2xl text-center transition-all duration-700 ${
+                visibleFeatures.has(1) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              data-feature-index="1"
+            >
               <div className="w-16 h-16 bg-[#000435]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-[#000435]">2</span>
               </div>
@@ -449,7 +487,12 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-[#000435]/5 p-6 rounded-2xl text-center">
+            <div
+              className={`feature-item bg-[#000435]/5 p-6 rounded-2xl text-center transition-all duration-700 ${
+                visibleFeatures.has(2) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              data-feature-index="2"
+            >
               <div className="w-16 h-16 bg-[#000435]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-[#000435]">3</span>
               </div>
@@ -459,7 +502,12 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-[#000435]/5 p-6 rounded-2xl text-center">
+            <div
+              className={`feature-item bg-[#000435]/5 p-6 rounded-2xl text-center transition-all duration-700 ${
+                visibleFeatures.has(3) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              data-feature-index="3"
+            >
               <div className="w-16 h-16 bg-[#000435]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-[#000435]">4</span>
               </div>
@@ -477,10 +525,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
-              Ready to Experience Premium Quality Rice?
+            Discover our Premium Quality Rice
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-white/80 mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
-              Discover our comprehensive range of premium basmati rice varieties, each carefully selected and processed to meet international quality standards.
+            Explore our comprehensive range of rice varieties each carefully selected and processed to meet international quality standards.
             </p>
             <div className="flex justify-center">
               <Link
